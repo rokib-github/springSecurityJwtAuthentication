@@ -25,9 +25,9 @@ public class AppUserPrinciple implements UserDetails {
     private boolean active;
     private Collection<? extends GrantedAuthority> authorities;
 
-    public AppUserPrinciple(Long id, String name,
-                            String username, String email, String password, boolean active,
-                            Collection<? extends GrantedAuthority> authorities) {
+    private AppUserPrinciple(Long id, String name,
+                             String username, String email, String password, boolean active,
+                             Collection<? extends GrantedAuthority> authorities) {
         this.id = id;
         this.name = name;
         this.userName = username;
